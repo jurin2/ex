@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wide Web</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>WEB</h1>
+    <button onclick="
+        // let btnMod = document.querySelector('button');
+
+        if(this.innerText == 'dark'){
+            darkMode();
+            this.innerText = 'light';
+        }else{
+            lightMode();
+            this.innerText = 'dark';
+
+        }
+        
+    ">dark</button>
+
+    <button onclick="lightMode();">light</button>
+
+    <ol>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="js.html">javaScript</a></li>
+    </ol>
+
+    <div>
+        <h2>CSS</h2>
+        <img src="./images/img-css.jpg" alt="CSS이미지">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, debitis aliquam earum reprehenderit aperiam accusantium ipsa in dolorum repudiandae modi magnam, numquam impedit possimus quae pariatur expedita, deleniti quas ipsam. <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, debitis aliquam earum reprehenderit aperiam accusantium ipsa in dolorum repudiandae modi magnam, numquam impedit possimus quae pariatur expedita, deleniti quas ipsam. <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, debitis aliquam earum reprehenderit aperiam accusantium ipsa in dolorum repudiandae modi magnam, numquam impedit possimus quae pariatur expedita, deleniti quas ipsam. <br> 
+        </p>
+    </div>
+
+    <script src="./js/dark-light.js"></script>
+
+</body>
+</html>
