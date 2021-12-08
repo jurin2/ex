@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자3</title>
+    <style>
+        a{
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* 속성 선택자 */
+        a[href="https://wwww.naver.com"]{
+            color:green
+        }
+        a[href *= "daum"]{
+            color: blue;
+        }
+
+        a[href $= "com"]{
+            color:red;
+        }
+
+        a[href ^= "https"]{
+            text-decoration: underline red;
+        }
+
+        button[style]{
+            color:black !important;
+        }
+        a[href="#"]{color: black;}
+        a[href="#"]:link{color: red;}
+        a[href="#"]:hover{color: green;}
+        a[href="#"]:active{color: blue;}
+        a[href="#"]:visited{color: cyan;}
+    </style>
+</head>
+<body>
+    <h1>선택자3</h1>
+    <a href="https://wwww.naver.com">네이버</a>
+    <br>
+    <a href="https://wwww.daum.net">다음</a>
+    <br>
+    <a href="https://wwww.google.com">구글</a>
+    <br>
+    <a href="http://wwww.computer.net">컴퓨터닷컴</a>
+    <br>
+    <button>버튼</button>
+    <button type="submit">전송</button>
+    <button type="reset" style="color: red;">취소</button>
+    <br>
+    <a href="#">임시</a>
+
+    
+</body>
+</html>

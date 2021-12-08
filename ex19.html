@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양식(form)</title>
+</head>
+<body>
+    <h1>양식(form)</h1>
+    <h2>로그인</h2>
+    <form action="login.php" method="post">
+        <label for="user-id">ID</label>
+        <input type="text" name="user-id" id="user-id">
+        <br>
+        <label for="user-pass">PASS</label>
+        <input type="password" name="user-pass" id="user-pass">      
+        <br>
+        <input type="checkbox" name="save-login" id="save-login">
+        <label for="save-login">로그인 상태유지</label>
+        <br>
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">
+    </form>
+
+
+</body>
+</html>

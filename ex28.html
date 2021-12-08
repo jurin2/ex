@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS Reset */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+
+        ul,ol,li{
+            list-style: none;
+            font-size: 30px;
+        }
+
+        /* 폰트 */
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        :root{
+            font-family: 'Roboto','Noto Sans KR','sans-serif';
+            /* font-size: 100px; */
+            color: #333;
+        }
+
+        h1{
+            color: #000;
+            background-color: #000;
+            text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80,2px -19px 18px #f20;
+
+        }
+        ul li:nth-child(1){
+            font-weight: 100;
+            font-size: 24px;
+        }
+        ul li:nth-child(2){
+            font-weight: 300;
+            font-size: 28px;
+        }
+        ul li:nth-child(3){
+            font-weight: 500;
+            font-size: 32px;
+        }
+        ul li:nth-child(4){
+            font-weight: 700;
+            font-size: 36px;
+        }
+        ul li:nth-child(5){
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        ul li:last-child{
+            /* text-decoration-style: solid; */
+            /* text-decoration-color: red; */
+            /* text-decoration-line: underline; */
+            /* text-decoration: solid red underline; */
+            color:#ff0;
+            text-decoration: underline;
+        }
+        p{
+       
+        }
+        p:first-of-type{
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            font-style: italic;
+            color: black;
+            text-align: center;
+            line-height:50px;
+        }
+        p:last-of-type span:first-child{
+            text-transform: uppercase;
+        }
+        p:last-of-type span:nth-child(2){
+            text-transform: lowercase;
+        }
+        p:last-of-type span:nth-child(3){
+            text-transform: capitalize;
+        }
+
+
+        ol li{
+            color:red;
+        }
+        ol li:nth-child(1){
+            color: #f00;
+        }
+        ol li:nth-child(2){
+            color: #0f0;
+        }
+        ol li:nth-child(3){
+            color:#00f;
+        }
+        ol li:nth-child(4){
+            color:#ff0;
+        }
+        ol li:nth-child(5){
+            color:#0ff;
+        }
+        ol li:nth-child(6){
+            color: #f0f;
+        }
+        ol li:nth-child(7){
+            color: #fff;
+            background-color: #000;
+        }
+        ol li:nth-child(8){
+            color: #666;
+        }
+        ol li:nth-child(9){
+            color: #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>글꼴 스타일</h1>
+    <ul>
+        <li>박스1</li>
+        <li>박스2</li>
+        <li>박스3</li>
+        <li>박스4</li>
+        <li>박스5</li>
+    </ul>
+    <p>대한민국</p>
+    <p>미국</p>
+
+    <ol>
+        <li>box01</li>
+        <li>box02</li>
+        <li>box03</li>
+        <li>box04</li>
+        <li>box05</li>
+        <li>box06</li>
+        <li>box07</li>
+        <li>box08</li>
+        <li>box09</li>
+    </ol>
+
+    <p>
+       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+       <span>Esse saepe omnis consequatur tempore veritatis quos pariatur,</span>
+       <span>obcaecati explicabo dolorum sequi ex error enim minima,</span> 
+       <span>praesentium necessitatibus in incidunt labore accusamus.</span> 
+    </p>
+</body>
+</html>
