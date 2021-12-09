@@ -7,6 +7,12 @@
     <link rel="shortcut icon" href="./images/theborn.png" type="image/x-icon">
     <title>더본코리아</title>
     <style>
+        .clearfix::after{
+            content:'';
+            display: block;
+            clear:both;
+        }
+
         *{
             margin: 0;
             padding: 0;
@@ -60,7 +66,7 @@
 <body>
     <section class="wrap">
         <header class="header" id="header">
-            <div class="container" id="container">
+            <div class="container clearfix" id="container">
                 <h1 class="main-logo">
                     <a href="#">로고
                         <!-- <img src="./images/footer_logo.jpg" alt="로고"> -->
@@ -68,7 +74,7 @@
                     
                 </h1>
                 <nav class="nav">
-                    <ul>
+                    <ul class="clearfix">
                         <li><a href="#">더본코리아</a></li>
                         <li><a href="#">브랜드</a></li>
                         <li><a href="#">매장찾기</a></li>

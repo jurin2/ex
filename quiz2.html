@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈2</title>
+    <style>
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header{
+            padding:20px;
+            background-color: #666;
+            font-weight: 700;
+            font-size: 32px;
+            color:#fff;
+            text-align: center;
+        }
+
+        .main>*{
+            float: left;
+            padding: 20px;
+            height: 500px;
+        }
+        
+        .aside{
+            width: 25%;    
+            background-color: hotpink;
+        }
+        .section{
+            width: 50%;
+            background-color: khaki;
+        }
+
+        .footer{
+            padding: 20px;
+            height: 150px;
+            background-color: lightsalmon;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <h1>사이트제목</h1>
+        </header>
+
+        <main class="main clearfix">
+            <aside class="aside">
+                <h2>사이드바</h2>
+
+             </aside>
+            <section class="section">
+                <h2>본문</h2>
+            
+            </section>
+
+            <aside class="aside">
+                <h2>사이드바2</h2>
+            </aside>
+         </main>
+
+        <footer class="footer">
+            <h2>푸터</h2>
+        </footer>
+    </section>
+</body>
+</html>
