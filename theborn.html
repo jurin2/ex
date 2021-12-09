@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/theborn.png" type="image/x-icon">
+    <title>더본코리아</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: #666;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .header{
+            box-shadow:0 2px 2px rgba(0,0,0,0.2);
+        }
+
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        .container:hover{
+            border-bottom: 1px solid #a73232;
+        }
+
+        .main-logo{
+            float:left;
+        }
+
+        .nav{
+            float: right;
+        }
+
+        .nav li{
+            float: left;
+            font-size: 15px;
+            font-weight: 600;
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        .nav a:hover{
+            color:#a73232;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header" id="header">
+            <div class="container" id="container">
+                <h1 class="main-logo">
+                    <a href="#">로고
+                        <!-- <img src="./images/footer_logo.jpg" alt="로고"> -->
+                    </a>
+                    
+                </h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">더본코리아</a></li>
+                        <li><a href="#">브랜드</a></li>
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">창업안내</a></li>
+                        <li><a href="#">더본소식</a></li>
+                        <li><a href="#">고객의소리</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+    </section>
+
+    <script>
+        let tmp = document.getElementById('header');
+        let tmp2 = document.getElementById('container');
+        tmp2.addEventListener('mouseover',function(){
+            tmp.style.boxShadow='none';
+        })
+        tmp2.addEventListener('mouseout',function(){
+            tmp.style.boxShadow='0 2px 2px rgba(0,0,0,0.3)';
+        })
+
+
+        
+    </script>
+</body>
+</html>
