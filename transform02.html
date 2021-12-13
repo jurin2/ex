@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신상품 목록</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,ol,li{
+            list-style: none;
+        }
+
+        img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+
+        .wrap{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header{
+            padding:20px 16px;
+        }
+
+        .header h1{
+            font-size: 62px;
+            text-align: center;
+        }
+
+        .sec01{
+            padding:20px 16px;
+        }
+
+        .sec01 li{
+            width: 32%;
+            float: left;
+            margin-right: 2%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .sec01 li:last-child{
+            margin-right: 0;
+        }
+
+        /* .img-box{} */
+
+        .content-box{
+            position: absolute;
+            left:50%;
+            top:150%;
+            transform: translate(-50%,-50%);
+            width: 80%;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        li:hover .content-box{
+            top:50%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <h1>신상품 목록</h1>
+        </header>
+        <section class="sec sec01">
+            <ul class="clearfix">
+                <li>
+                    <div class="img-box">
+                        <img src="./images/christmas04.jpg" alt="크리스마스1">
+                    </div>
+                    <div class="content-box">
+                        <h2>크리스마스 1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus repellat quo at corrupti explicabo veniam, ea molestias, reiciendis mollitia autem temporibus harum fugit aspernatur? Expedita itaque necessitatibus suscipit libero officia!
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="img-box">
+                        <img src="./images/christmas05.jpg" alt="크리스마스2">
+                    </div>
+                    <div class="content-box">
+                        <h2>크리스마스 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus repellat quo at corrupti explicabo veniam, ea molestias, reiciendis mollitia autem temporibus harum fugit aspernatur? Expedita itaque necessitatibus suscipit libero officia!
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="img-box">
+                        <img src="./images/christmas03.jpg" alt="크리스마스3">
+                    </div>
+                    <div class="content-box">
+                        <h2>크리스마스 3</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus repellat quo at corrupti explicabo veniam, ea molestias, reiciendis mollitia autem temporibus harum fugit aspernatur? Expedita itaque necessitatibus suscipit libero officia!
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </section>
+   
+</body>
+</html>
