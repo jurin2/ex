@@ -18,7 +18,6 @@
         .header{
             position: relative;
             padding:20px 12px;
-            perspective: 600px;
         }
 
         h1{
@@ -38,13 +37,12 @@
             bottom:0;
             right:0;
             background-color: rgba(0,0,0,0.5);
-            transform:rotateY(180deg);
-            backface-visibility: hidden;
+            transform:translateX(100%) ;
             transition: 0.3s;
         }
 
         .nav.active{
-            transform:rotateY(0deg);
+            transform:translateX(0) ;
         }
 
         .btn-nav{
@@ -84,7 +82,7 @@
             width: 50%;
             height: 100%;
             padding: 20px;
-            /* background-color: #000; */
+            background-color: #000;
         }
 
         .nav li{
@@ -108,6 +106,9 @@
                 <span></span>
             </div>
             <nav class="nav clearfix" id="nav">
+                <div class="btn-hidden" onclick="
+                    document.getElementById('nav').classList.toggle('hidden')
+                    "></div>
                 <ul>
                     <li><a href="#">링크1</a></li>
                     <li><a href="#">링크2</a></li>
