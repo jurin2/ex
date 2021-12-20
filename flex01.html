@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex01</title>
+    <style>
+        *{
+            /* box-sizing: border-box; */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .par-box{
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            /* 플렉스 컨테이너 / 플레서블 박스 */
+            display: flex;
+            /* 주축 가로 */
+            flex-direction: row;
+            /* 주축 세로 반전 */
+            /* flex-direction: column-reverse; */
+            /* 플렉스 컨테이너 줄바꿈 허용여부 */
+            flex-wrap: nowrap;
+        }
+
+        .par-box{
+            height: 300px;
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        .child-box{
+            display: block;
+            width: 600px;
+            height: 150px;
+        }
+
+        .child-box01{
+            background-color: #f00;
+        }
+
+        .child-box02{
+            background-color: #0f0;
+        }
+
+        .child-box03{
+            background-color: #00f;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="par-box">
+        <div class="child-box child-box01"></div>
+        <div class="child-box child-box02"></div>
+        <div class="child-box child-box03"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, hic? Dignissimos esse est id reprehenderit odio sint aliquam velit doloremque obcaecati nobis tempore delectus itaque blanditiis doloribus, veritatis distinctio ipsa!
+        Adipisci, quos nihil quisquam sit commodi corrupti necessitatibus, dolor delectus quis soluta accusamus, similique saepe ipsa magnam accusantium ipsam rem repellendus sed. Quidem magnam eius accusamus fugiat explicabo, commodi modi.
+        Quod perferendis repellendus dicta, placeat in numquam, quaerat eveniet libero itaque minus voluptatum consequuntur deleniti quisquam dignissimos. Nesciunt voluptas necessitatibus aspernatur voluptates dolorem exercitationem assumenda vel recusandae, deserunt temporibus accusamus.
+        Optio reiciendis similique vitae doloribus dolore! Harum cum sequi, nisi magni, quasi quae, consequatur eaque quibusdam omnis mollitia numquam. Reprehenderit esse nam nemo odio, voluptate necessitatibus corporis numquam quisquam aut.
+        Maxime laboriosam dignissimos facilis deleniti amet minima accusantium vero recusandae, consequuntur suscipit incidunt doloribus vel debitis, iusto velit? Recusandae magni error beatae architecto optio necessitatibus rem quis eaque nulla perspiciatis.</p>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation01</title>
+    <style>
+        h1{text-align: center;}
+        .par-box{
+            position: absolute;
+            left: 0%;
+            right: 0;
+            top: 100px;
+            bottom: 0;
+            border:10px solid black;
+            animation-name: ani1;
+            animation-duration: 0.5s;
+        }
+
+        .child-box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* animation-name: ani2;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 2;
+            animation-timing-function: ease-in;
+            animation-delay: 2s; */
+            /* animation: ani2 1s 10 2s alternate ease; */
+            animation: ani3 10s forwards;
+            animation-play-state: paused;
+        }
+
+        .child-box:hover {
+            animation-play-state: running;
+        }
+
+
+        
+        /* 도형변형 */
+        @keyframes ani1 {
+            from{
+                border-radius: 0;
+            }
+            to{
+                border-radius: 50%;
+            } 
+        }
+
+        /* 이동 */
+        @keyframes ani2 {
+            from{
+                margin-left: 0;
+                border-radius: 0;
+                transform: rotate(0);
+                background-color: blue;
+            }
+            to{
+                margin-left: 600px;
+                border-radius: 50%;
+                transform: rotate(360deg);
+                background-color: red;
+            }
+        }
+
+        @keyframes ani3 {
+            from{
+                background-color: blue;
+            }
+            to{
+                background-color: red;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <h1>animation01</h1>
+    <div class="par-box">
+        <div class="child-box"></div>
+    </div>
+</body>
+</html>
