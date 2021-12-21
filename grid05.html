@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid05</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        .par-box{
+            width: 600px;
+            height: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 10px solid #f00;
+            border-radius: 10px;
+
+            display: grid;
+            /* grid-template-rows: repeat(3,1fr); */
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template: repeat(3,1fr)/repeat(3,1fr);
+            gap: 10px;
+            /* justify-content: space-between; */
+            /* align-content: space-between; */
+            /* place-content:center; */
+            place-items: center;
+        }
+        .child-box{
+            width: 100px;
+            height: 100px;
+            border: 4px solid #000;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        .child-box01{
+            justify-self: end;
+            align-self: end;
+        }
+        .child-box06{
+            justify-self: start;
+            align-self: end;
+        }
+        .child-box08{
+            place-self: start center;
+        }
+        .child-box09{
+            width: auto;
+            height: auto;
+            justify-self: stretch;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid05</h1>
+    <div class="par-box">
+        <div class="child-box child-box01">1</div>
+        <div class="child-box child-box02">2</div>
+        <div class="child-box child-box03">3</div>
+        <div class="child-box child-box04">4</div>
+        <div class="child-box child-box05">5</div>
+        <div class="child-box child-box06">6</div>
+        <div class="child-box child-box07">7</div>
+        <div class="child-box child-box08">8</div>
+        <div class="child-box child-box09">9</div>
+    </div>
+</body>
+</html>
